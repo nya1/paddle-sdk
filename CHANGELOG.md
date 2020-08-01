@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/avaly/paddle-sdk/compare/v2.1.0...v2.3.0) (2020-08-01)
+
+
+### Features
+
+* Add TS declaration file and build command ([562de86](https://github.com/avaly/paddle-sdk/commit/562de86cc14399c0bc7152e24cea6176933dd99c))
+* fix get user transactions, allow to pass body options ([453f58d](https://github.com/avaly/paddle-sdk/commit/453f58dc5da3e5b0a37d9e3757e83634e900856d))
+
 ## [2.2.0](https://github.com/avaly/paddle-sdk/compare/v2.1.0...v2.2.0) (2020-05-12)
 
 

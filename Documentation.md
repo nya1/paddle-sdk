@@ -15,10 +15,10 @@ Welcome to the [Paddle.com](http://www.paddle.com/) Node.js SDK documentation.
     * [.getPlanUsers(planID)](#PaddleSDK+getPlanUsers) ⇒ <code>Promise</code>
     * [.getPlanPayments(planID)](#PaddleSDK+getPlanPayments) ⇒ <code>Promise</code>
     * [.getWebhooksHistory()](#PaddleSDK+getWebhooksHistory) ⇒ <code>Promise</code>
-    * [.getUserTransactions(userID)](#PaddleSDK+getUserTransactions) ⇒ <code>Promise</code>
-    * [.getSubscriptionTransactions(subscriptionID)](#PaddleSDK+getSubscriptionTransactions) ⇒ <code>Promise</code>
-    * [.getOrderTransactions(orderID)](#PaddleSDK+getOrderTransactions) ⇒ <code>Promise</code>
-    * [.getCheckoutTransactions(checkoutID)](#PaddleSDK+getCheckoutTransactions) ⇒ <code>Promise</code>
+    * [.getUserTransactions(userID, [body])](#PaddleSDK+getUserTransactions) ⇒ <code>Promise</code>
+    * [.getSubscriptionTransactions(subscriptionID, [body])](#PaddleSDK+getSubscriptionTransactions) ⇒ <code>Promise</code>
+    * [.getOrderTransactions(orderID, [body])](#PaddleSDK+getOrderTransactions) ⇒ <code>Promise</code>
+    * [.getCheckoutTransactions(checkoutID, [body])](#PaddleSDK+getCheckoutTransactions) ⇒ <code>Promise</code>
     * [.verifyWebhookData(postData)](#PaddleSDK+verifyWebhookData) ⇒ <code>boolean</code>
     * [.updateSubscriptionPlan(subscriptionID, planID, prorate)](#PaddleSDK+updateSubscriptionPlan) ⇒ <code>Promise</code>
     * [.cancelSubscription(subscriptionID)](#PaddleSDK+cancelSubscription) ⇒ <code>Promise</code>
@@ -129,7 +129,7 @@ const webhooksHistory = await client.getWebhooksHistory();
 ```
 <a name="PaddleSDK+getUserTransactions"></a>
 
-### client.getUserTransactions(userID) ⇒ <code>Promise</code>
+### client.getUserTransactions(userID, [body]) ⇒ <code>Promise</code>
 Get the list of transations for a user
 
 **Kind**: instance method of [<code>PaddleSDK</code>](#PaddleSDK)  
@@ -138,6 +138,7 @@ Get the list of transations for a user
 | Param | Type |
 | --- | --- |
 | userID | <code>number</code> | 
+| [body] | <code>object</code> | 
 
 **Example**  
 ```js
@@ -145,7 +146,7 @@ const userTransactions = await client.getUserTransactions(123);
 ```
 <a name="PaddleSDK+getSubscriptionTransactions"></a>
 
-### client.getSubscriptionTransactions(subscriptionID) ⇒ <code>Promise</code>
+### client.getSubscriptionTransactions(subscriptionID, [body]) ⇒ <code>Promise</code>
 Get the list of transations for a subscription
 
 **Kind**: instance method of [<code>PaddleSDK</code>](#PaddleSDK)  
@@ -154,6 +155,7 @@ Get the list of transations for a subscription
 | Param | Type |
 | --- | --- |
 | subscriptionID | <code>number</code> | 
+| [body] | <code>object</code> | 
 
 **Example**  
 ```js
@@ -161,7 +163,7 @@ const subscriptionTransactions = await client.getSubscriptionTransactions(123);
 ```
 <a name="PaddleSDK+getOrderTransactions"></a>
 
-### client.getOrderTransactions(orderID) ⇒ <code>Promise</code>
+### client.getOrderTransactions(orderID, [body]) ⇒ <code>Promise</code>
 Get the list of transations for an order
 
 **Kind**: instance method of [<code>PaddleSDK</code>](#PaddleSDK)  
@@ -170,6 +172,7 @@ Get the list of transations for an order
 | Param | Type |
 | --- | --- |
 | orderID | <code>number</code> | 
+| [body] | <code>object</code> | 
 
 **Example**  
 ```js
@@ -177,7 +180,7 @@ const orderTransactions = await client.getOrderTransactions(123);
 ```
 <a name="PaddleSDK+getCheckoutTransactions"></a>
 
-### client.getCheckoutTransactions(checkoutID) ⇒ <code>Promise</code>
+### client.getCheckoutTransactions(checkoutID, [body]) ⇒ <code>Promise</code>
 Get the list of transations for a checkout
 
 **Kind**: instance method of [<code>PaddleSDK</code>](#PaddleSDK)  
@@ -186,6 +189,7 @@ Get the list of transations for a checkout
 | Param | Type |
 | --- | --- |
 | checkoutID | <code>number</code> | 
+| [body] | <code>object</code> | 
 
 **Example**  
 ```js
@@ -271,4 +275,4 @@ const custom = await client.generatePayLink({
 ```
 ---
 
-Documentation generated on **Tue, 12 May 2020 09:35:32 GMT**
+Documentation generated on **Sat, 01 Aug 2020 13:16:10 GMT**
