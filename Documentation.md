@@ -275,4 +275,4 @@ const custom = await client.generatePayLink({
 ```
 ---
 
-Documentation generated on **Sat, 01 Aug 2020 13:16:10 GMT**
+Documentation generated on **Sat, 01 Aug 2020 13:26:05 GMT**
